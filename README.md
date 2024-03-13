@@ -1,3 +1,7 @@
-Firstly install node modules by npm install
-To run the Backend - nodemon server.js
-To run the client - npm run dev
+Firstly, install Node modules by running npm install.
+
+To start the backend, use nodemon server.js.
+
+To run the client, execute npm run dev.
+
+You can also check the website, the code is already deployed
