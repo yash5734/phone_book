@@ -26,7 +26,7 @@ export default function AddUser() {
         e.preventDefault();
 
         try {
-            const addUser = await axios.post('http://localhost:3000/api/create', value);
+            const addUser = await axios.post('https://phone-book-erku.onrender.com/api/create', value);
             const response = addUser.data;
             if (response.success) {
                 toast.success(response.Message);

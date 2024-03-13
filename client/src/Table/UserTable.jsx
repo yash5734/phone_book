@@ -24,7 +24,7 @@ export default function UserTable() {
     // Fetch user data
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:3000/api/getusers");
+        const response = await axios.get("https://phone-book-erku.onrender.com/api/getusers");
         setUserData(response.data); // Set user data in state
       } catch (error) {
         console.log(error);
@@ -49,7 +49,7 @@ export default function UserTable() {
   const handleUserDelete = async () => {
     try {
       const deletedUser = await axios.delete(
-        `http://localhost:3000/api/delete/${userId}`
+        `https://phone-book-erku.onrender.com/api/delete/${userId}`
       );
       const response = deletedUser.data;
       if (response.success) {
@@ -73,7 +73,7 @@ export default function UserTable() {
 
     try {
       const updatedUser = await axios.put(
-        `http://localhost:3000/api/update/${updatedUserId}`,
+        `https://phone-book-erku.onrender.com/api/update/${updatedUserId}`,
         value
       );
       const response = updatedUser.data;

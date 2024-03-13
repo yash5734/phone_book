@@ -10,7 +10,7 @@ export default function Table({ deleteUser, updateUser }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:3000/api/getusers");
+        const response = await axios.get("https://phone-book-erku.onrender.com/api/getusers");
         setData(response.data); // Assuming response.data is an array of users
       } catch (error) {
         console.log(error);
