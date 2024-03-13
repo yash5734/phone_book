@@ -53,9 +53,9 @@ export default function UserTable() {
       );
       const response = deletedUser.data;
       if (response.success) {
-        toast.success(response.message);
-        window.location.reload();
+        toast.success(response.message);  
       }
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }
